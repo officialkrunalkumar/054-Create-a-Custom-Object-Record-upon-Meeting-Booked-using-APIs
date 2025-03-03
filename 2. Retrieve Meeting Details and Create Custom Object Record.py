@@ -10,7 +10,7 @@ def main(event):
   domain = event.get("inputFields").get("domain")
   setter = event.get("inputFields").get("setter")
   disqualified_reason = event.get("inputFields").get("disqualifiedReason")
-  url = f"https://api.hubapi.com/engagements/v1/engagements/{mid}?hubspot_owner_id"
+  url = f"https://api.hubapi.com/engagements/v1/engagements/{mid}"
   headers = {
     "Authorization": f"Bearer {token}",
     "Content-Type": "application/json"
